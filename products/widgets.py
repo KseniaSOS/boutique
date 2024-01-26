@@ -1,8 +1,6 @@
 from django.forms.widgets import ClearableFileInput
 from django.utils.translation import gettext_lazy as _
 
-#using 'as _' means we can now call gettext_lazy() using _().
-#it is effectively an alians.
 
 class CustomClearableFileInput(ClearableFileInput):
     clear_checkbox_label = _('Remove')
